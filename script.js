@@ -83,7 +83,7 @@ function createPlanner(){
             newTextCol.addClass("future");
         }
 
-        $(".container").append(newRow);
+        $(".main").append(newRow);
         newRow.append(newHourCol, newTextCol, newSaveCol);
         newSaveCol.append(newLockImg);
 
@@ -113,6 +113,20 @@ $(".saveBtn").on("click", function(){
     var textValue = $(this).siblings(".textarea").val();
     localStorage.setItem(timeStamp, textValue);
 });
+
+$("#clearBtn").on("click",  function(){
+    localStorage.clear();
+
+    $("#9").val("");
+    $("#10").val("");
+    $("#11").val("");
+    $("#12").val("");
+    $("#1").val("");
+    $("#2").val("");
+    $("#3").val("");
+    $("#4").val("");
+    $("#5").val(""); 
+})
 
 
 
