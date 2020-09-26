@@ -3,11 +3,14 @@ $("#currentDay").text(moment().format('dddd, MMMM Do'));
 
 var currentHour = parseInt(moment().format('HH'));
 
+console.log(currentHour);
+
 function createPlanner(){
      
     var i = 0;
 
     var iT = 9;
+    var styleCheck = 8;
 
     while(i <= 8){
         var newRow = $("<div>");
@@ -23,6 +26,7 @@ function createPlanner(){
         newSaveCol.attr("class", "col-1 saveBtn text-center");
         newSaveCol.attr("data-time", iT);
 
+
         newLockImg = $("<img>");
         newLockImg.attr("src", "assets/images/locked.svg");
         newLockImg.attr("class", "w-50 mt-4")
@@ -31,53 +35,64 @@ function createPlanner(){
             case 9:
                 newHourCol.text(iT + "am");
                 newTextCol.attr("id", iT);
+                styleCheck++;
                 iT++;
             break;
             case 10:
                 newHourCol.text(iT + "am");
                 newTextCol.attr("id", iT);
+                styleCheck++;
                 iT++;
             break;
             case 11:
                 newHourCol.text(iT + "am");
                 newTextCol.attr("id", iT);
+                styleCheck++;
                 iT++;
             break;
             case 12:
                 newHourCol.text(iT + "pm");
                 newTextCol.attr("id", iT);
+                styleCheck++;
                 iT = iT - 11;
             break;
             case 1:
                 newHourCol.text(iT + "pm");
                 newTextCol.attr("id", iT);
+                styleCheck++;
                 iT++;
             break;
             case 2:
                 newHourCol.text(iT + "pm");
                 newTextCol.attr("id", iT);
+                styleCheck++;
                 iT++;
             break;
             case 3:
                 newHourCol.text(iT + "pm");
                 newTextCol.attr("id", iT);
+                styleCheck++;
                 iT++;
             break;
             case 4:
                 newHourCol.text(iT + "pm");
                 newTextCol.attr("id", iT);
+                styleCheck++;
                 iT++;
             break;
             case 5:
                 newHourCol.text(iT + "pm");
                 newTextCol.attr("id", iT);
+                styleCheck++;
                 iT++;
             break;
         }
 
-        if(iT === currentHour){
+        console.log(styleCheck);
+
+        if(styleCheck === currentHour){
             newTextCol.addClass("present");
-        } else if(iT < currentHour) {
+        } else if(styleCheck < currentHour) {
             newTextCol.addClass("past");
         } else {
             newTextCol.addClass("future");
