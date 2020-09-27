@@ -1,5 +1,5 @@
 # day-planner
-In this [project](https://goodlvn.github.io/day-planner/) we are tasked with creating a day planner that helps us keep track of our daily activities! We use moment.js to help our application keep track of time outside of relying on our computers OS. The parameters for the assignment were to create a planner that take in to account the standard business hours of a day (9-5pm). We should have a text area that allows the use to input the activity for any given time and a saveBtn that allows the data to persist by storing it in the local storage of the browser.
+In this [project](https://goodlvn.github.io/day-planner/) we are tasked with creating a day planner that helps us keep track of our daily activities! We use moment.js to help our application keep track of time outside of relying on our computers OS. The parameters for the assignment are to create a planner that takes in to account the standard business hours of a day (9-5pm). We should have a text area that allows the use to input the activity for any given time and a save button that allows the data to persist by storing it in the local storage of the browser.
 
 ## Screenshot of the project 
 
@@ -11,7 +11,7 @@ In this [project](https://goodlvn.github.io/day-planner/) we are tasked with cre
 2. Save the activity with the save button to have it persist past a page refresh or browser closure 
 
 * can clear entire agenda using the "Clear Agenda" button 
-* time blocks are color coded to express activitiest that have past (in gray), activities that are to come (in green) and the current activity (in red)
+* time blocks are color coded to express activities that have past (in gray), activities that are to come (in green) and the current activity (in red)
 
 ## Technologies used
 
@@ -26,7 +26,7 @@ In this [project](https://goodlvn.github.io/day-planner/) we are tasked with cre
 
 ## What makes this project stand out? 
 
-Although this project was seemingly less daunting than the [last](https://goodlvn.github.io/hunterxhunter-timed-quiz/), it was great to use an API to create funcionality inside of our project. We got exposure to reading documentation specific to the API. It was really neat using the specific calls to make the application work. Something else that really stood out to me about the project was the fact that we had the options to either hard code the time blocks into our index.html or use our script.js page to dynamically create them. It reminded me that there is more than one way to go about tackling a problem! The more we learn the more we can adopt and integrate into our own style of coding to make it cleaner and more effecient!
+Although this project was seemingly less daunting than the [last](https://goodlvn.github.io/hunterxhunter-timed-quiz/), it was fun challenge integrating an API to create funcionality inside of our project. We got exposure to reading documentation specific to the API. It was really neat using the specific calls to make the application work. Something else that really stood out to me about the project was the fact that we had the options to either hard code the time blocks into our index.html or use our script.js page to dynamically create them. It reminded me that there is more than one way to go about tackling a problem! The more we learn the more we can adopt and integrate into our own style of coding to make it cleaner and more effecient!
 
 ## Areas to improve on: repetitve code 
 
