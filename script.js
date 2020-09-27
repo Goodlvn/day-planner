@@ -141,8 +141,7 @@ $("#clearBtn").on("click",  function(){
     $("#3").val("");
     $("#4").val("");
     $("#5").val(""); 
-})
+});
 
 
 
-// https://stackoverflow.com/questions/8623108/on-button-click-select-a-sibling-element-with-jquery - helped me get info from the same row
